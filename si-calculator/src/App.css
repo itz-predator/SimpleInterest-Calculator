@@ -1,0 +1,118 @@
+/* Reset margin and height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Neon animated background */
+.neon-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: moveBG 20s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes moveBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.neon-box {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #0ff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: #fff;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #111;
+  color: white;
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.7rem;
+  background: transparent;
+  color: #0ff;
+  font-weight: bold;
+  border: 2px solid #0ff;
+  border-radius: 12px;
+  text-shadow: 0 0 5px #0ff;
+  cursor: pointer;
+  box-shadow: 0 0 8px #0ff, 0 0 15px #0ff inset;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #0ff, transparent 60%);
+  animation: pulse 2s infinite;
+  opacity: 0.2;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #f0f;
+  box-shadow: 0 0 15px #f0f, 0 0 30px #f0f inset;
+  text-shadow: 0 0 10px #f0f;
+}
+
+.result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid #0f0;
+  border-radius: 10px;
+  color: #0f0;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer a {
+  color: #ff00ff;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
