@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SimpleInterest-Calculator/static/css/main.712d4470.css",
+    "main.js": "/SimpleInterest-Calculator/static/js/main.1d0e72c0.js",
+    "static/js/453.cfe55397.chunk.js": "/SimpleInterest-Calculator/static/js/453.cfe55397.chunk.js",
+    "index.html": "/SimpleInterest-Calculator/index.html",
+    "main.712d4470.css.map": "/SimpleInterest-Calculator/static/css/main.712d4470.css.map",
+    "main.1d0e72c0.js.map": "/SimpleInterest-Calculator/static/js/main.1d0e72c0.js.map",
+    "453.cfe55397.chunk.js.map": "/SimpleInterest-Calculator/static/js/453.cfe55397.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.712d4470.css",
+    "static/js/main.1d0e72c0.js"
+  ]
+}
