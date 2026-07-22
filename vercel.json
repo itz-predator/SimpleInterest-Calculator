@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "projects": [
+    {
+      "src": "si-calculator/package.json",
+      "use": "@vercel/static-build",
+      "buildCommand": "npm install && npm run build",
+      "outputDirectory": "si-calculator/build"
+    }
+  ]
+}
